@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>node.js中的模块化 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="模块化什么是模块？ 每个.js文件就是一个模块 从npm上下载的一个包（可能是由多个文件组成的一个实现特定功能的包）也是一个模块 任何文件或目录只要可以被Node.js通过require()函数加载的都是模块 每个模块就是一个独立的作用域，模块和模块之间不会互相”污染” 我们可以通过编程的方式，指定某个模块要对外暴露的内容（其实就是指定require的返回值，通过require的返回值对外暴露指定">
+<meta property="og:type" content="article">
+<meta property="og:title" content="node.js中的模块化">
+<meta property="og:url" content="http://yoursite.com/2017/07/20/express/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="模块化什么是模块？ 每个.js文件就是一个模块 从npm上下载的一个包（可能是由多个文件组成的一个实现特定功能的包）也是一个模块 任何文件或目录只要可以被Node.js通过require()函数加载的都是模块 每个模块就是一个独立的作用域，模块和模块之间不会互相”污染” 我们可以通过编程的方式，指定某个模块要对外暴露的内容（其实就是指定require的返回值，通过require的返回值对外暴露指定">
+<meta property="og:updated_time" content="2017-07-20T13:07:01.753Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="node.js中的模块化">
+<meta name="twitter:description" content="模块化什么是模块？ 每个.js文件就是一个模块 从npm上下载的一个包（可能是由多个文件组成的一个实现特定功能的包）也是一个模块 任何文件或目录只要可以被Node.js通过require()函数加载的都是模块 每个模块就是一个独立的作用域，模块和模块之间不会互相”污染” 我们可以通过编程的方式，指定某个模块要对外暴露的内容（其实就是指定require的返回值，通过require的返回值对外暴露指定">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,9 +63,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-express" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-express" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/07/20/express/" class="article-date">
   <time datetime="2017-07-20T12:56:06.000Z" itemprop="datePublished">2017-07-20</time>
@@ -74,8 +76,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/20/express/">node.js中的模块化</a>
+    <h1 class="article-title" itemprop="name">
+      node.js中的模块化
     </h1>
   
 
@@ -133,49 +135,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-my-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/20/my-first-blog/" class="article-date">
-  <time datetime="2017-07-20T11:44:03.000Z" itemprop="datePublished">2017-07-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/20/my-first-blog/">my first blog</a>
-    </h1>
+    <a href="/2017/07/20/my-first-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">my first blog</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="this-is-my-first-blog"><a href="#this-is-my-first-blog" class="headerlink" title="this is my first blog"></a>this is my first blog</h2><h3 id="啊哈哈"><a href="#啊哈哈" class="headerlink" title="啊哈哈"></a>啊哈哈</h3><h4 id="这玩意要怎么写啊"><a href="#这玩意要怎么写啊" class="headerlink" title="这玩意要怎么写啊"></a>这玩意要怎么写啊</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">这里面好像是黑色的，可以随便写</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">lily yu is shazi</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">先就这样测试一下吧 啊哈</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/20/my-first-blog/" data-id="cj5cgg0nk000080izbtdv4yh5" class="article-share-link">Delen</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
